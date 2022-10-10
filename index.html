@@ -7,6 +7,9 @@
     <title>Perryville Baptist</title>
     <link rel="stylesheet" href="styles.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
     <script src="https://kit.fontawesome.com/208dfe14e5.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
 
@@ -32,69 +35,99 @@
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">
+                    <a href="/Events.html" class="navbar__links">
                         Events
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">
+                    <a href="/AboutUs.html" class="navbar__links">
                         About Us
                     </a>
                 </li>
-                <li class="navbar__btn">
-                    <a href="/" class="button">
-                        Get Connected
-                    </a>
-                </li>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Get Connected
+                  </button>
             </ul>
         </div>
     </nav>
 
-    <!-- Iframe Section -->
+    <!-- Modal Section -->
+   
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" >
+          <div class="modal-content" style="background-color: #131313;">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary" id="exampleModalLabel">Contact Info and Times</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-white">
+              <p>Phone: 903-725-7729</p>
+              <p>Email: contact@perryvillbaptist.org </p>
+              <p>Address: 9429 E FM 852, Winnsboro, TX</p>
+              <strong>Service Times</strong>
+              <p>Sunday: 11am</p>
+              <p>Wednesday: 6:30pm</p>
+              <p>Monday: 6pm - Ladies Bible Study w/ Donna</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Hero Section -->
-    
-  <main>
+   
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
 
-    <div id="carousel">
-      
-      <div class="slides">
-        <img class="hideLeft" style="width: 200px" src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
-      
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-      
-        <img class="prevLeftSecond" style="width: 200px" src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/Worship.jpg" class="d-block" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h2>Worship With Us Live</h2>
+              <p>Hop over to our Facebook page to join us on Sunday Mornings at 11am</p>
+              <a class="btn btn-outline-primary" href="https://www.facebook.com/perryvillebc" role="button" target="_blank" >Learn More</a>
 
-      
-        <img class="prev" style="width: 300px" src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-      
+            </div>
+          </div>
 
-      
-        <img class="selected" style="width: 200px" src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-      
+          <div class="carousel-item">
+            <img src="Images/Devotional.jpg" class="d-block" alt="..." style="max-height: 840px; object-fit: cover;">
+            <div class="carousel-caption  d-md-block">
+              <h2>Don't Worry If You Missed Us</h2>
+              <p>You can catch up on any missed sermons, or watch a message for your quiet time over at YouTube.</p>
+              <button type="button" class="btn btn-outline-primary">Learn More</button>
+            </div>
+          </div>
 
-      
-        <img class="next" style="width: 300px" src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-      
+          <div class="carousel-item">
+            <img src="Images/Community.jpg" class="d-block" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h2>Find Out Whats Coming Soon</h2>
+              <p>Our Events Page shows how you can fellowship with our church family, or jump into helping our community</p>
+              <a class="btn btn-outline-primary" href="/Events.html" role="button" target="_blank" >Learn More</a>
 
-      
-        <img class="nextRightSecond" style="width: 200px" src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-      
+            </div>
+          </div>
+        </div>
 
-      
-        <img class="hideRight" style="width: 200px" src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
       </div>
-    </div>
-
-    
-
-    <div class="buttons">
-      <button id="prev">Prev</button>
-      <button id="next">Next</button>
-    </div>
-
-  </main>
 
     <!-- Events Section -->
     <div class="events">
@@ -102,30 +135,30 @@
       <div class="BackgroundImage">
         <div class="Grid">
             <div class="Calender">
-                <div class="Month"> January</div>
-                <div class="Day"> 14th</div>
+                <div class="Month"> October</div>
+                <div class="Day"> 10th</div>
             </div>
-            <div class="C1"> C2</div>
+            <h4 class="C1"> Ladies Sowing Project - Hope Ministry</h4>
             <div class="Calender">
-                <div class="Month"> January</div>
-                <div class="Day"> 14th</div>
+                <div class="Month"> October</div>
+                <div class="Day"> 19th</div>
             </div>
-            <div class="C2"> C4</div>
+            <h4 class="C2">Business Meeting and Fellowship</h4>
             <div class="Calender">
-                <div class="Month"> January</div>
-                <div class="Day"> 14th</div>
+                <div class="Month"> October</div>
+                <div class="Day"> 29th</div>
             </div>
-            <div class="C3"> C6</div>
+            <h4 class="C3"> Caring And Sharing: Join us as we help give food out, and care for our community.</h4>
             <div class="Calender">
-                <div class="Month"> January</div>
-                <div class="Day"> 14th</div>
+                <div class="Month"> October</div>
+                <div class="Day"> 15th-22nd</div>
             </div>
-            <div class="C4"> C8</div>
+            <h4 class="C4"> Y A M B O R E E</h4>
         </div>
       </div>
 
         <!-- Footer Section -->
-    <div class="footer__container">
+    <!-- <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
@@ -164,30 +197,98 @@
                 </div>
             </div>
          </div>
-         <div class="social__media">
+    </div> -->
+
+  <div class="containerbox">
+    <div class="container">
+      <div class="row text-center mb">
+        <div class="row">
+            <div class="col-md-4 mb">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img class="img-responsive" src="https://unsplash.it/600/200/?random" alt="#" style="object-fit: fill; position: relative; width: 100%; height: 100%;">
+                            <div class="caption text-center">
+                                <h3 class="">Our Beliefs</h3>
+                                <p class="">Read More About What We Teach</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <h2 class="">Here comes the back</h2>
+                            <p class="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
+                            <a href="/OurBeliefs.html" class="btn btn-dark text-center" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                             <img src="https://unsplash.it/300/200/?random" alt="#" class="" style="object-fit: fill; position: relative; width: 100%; height: 100%;">
+                            <div class="caption text-center">
+                                <h3 class="">Ministry</h3>
+                                <p class="">What we do, and where you can help</p>
+                             </div>
+                            
+                        </div>
+                        <div class="back">
+                            <h2 class="">Here comes the back</h2>
+                            <p class="">What I think is cool is to have a button at the flipped side, but this would have to bee looked into on mobiles, perharps use javascript to place them out of the flip box?</p>
+                            <p class=""><a href="#" class="btn btn-dark" role="button">Button</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb">
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="Images/TitheBox.jpg" alt="#" class="FlipperImage" style="object-fit: fill; position: relative; width: 100%; height: 100%;">
+                             <div class="caption text-center">
+                                <h3 class="">Give</h3>
+                                <p class="">Support the Church</p>
+                             </div>
+                        </div>
+                        <div class="back">
+                            <h2 class="">Mail a Check</h2>
+                            <p class="">Online giving is not currently supported, but you can mail a check to <address>9429 E FM 852 Winnsboro, TX 75494</address></p>
+                            <p class=""><a href="#" class="btn btn-dark" role="button">Button</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <p class="BTT"><a href="#" class="btn btn-primary" role="button">Back To Top</a>
+    </div>
+    <div class="socialmediacontainer">
+        <div class="social__media">
             <div class="social__media--wrap">
                 <div class="footer__logo">
                     <a href="/" id="footer__logo"><i class="fa-solid fa-church"></i>Perryville Baptist</a>
                 </div>
-                <p class="websit__right">Perryville Baptist 2022. All Rights Reserved</p>
+                <p class="website__right">Perryville Baptist 2022. All Rights Reserved</p>
                 <div class="social__icons">
-                    <a href="" class="social__icons--link" target="_blank">
+                    <a href="https://www.facebook.com/perryvillebc" class="social__icons--link" target="_blank">
                        <I class="fab fa-facebook"></I>
                     </a>
-                    <a href="" class="social__icons--link" target="_blank">
-                        <I class="fab fa-twitter"></I>
-                     </a>
                      <a href="" class="social__icons--link" target="_blank">
                         <I class="fab fa-youtube"></I>
                      </a>
-                     <a href="" class="social__icons--link" target="_blank">
+                     <a href="https://www.instagram.com/perryvillebc/" class="social__icons--link" target="_blank">
                         <I class="fab fa-instagram"></I>
                      </a>
                 </div>
             </div>
          </div>
     </div>
+  </div>
+    <div id="push" class=""></div>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
